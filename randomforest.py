@@ -4,7 +4,7 @@ from sklearn import model_selection
 from sklearn import datasets
 from sklearn.cross_validation import train_test_split
 from sklearn.metrics import accuracy_score
-
+#randomforest
 dataset = datasets.load_digits()
 
 image_features = dataset.images.reshape((len(dataset.images), -1))
