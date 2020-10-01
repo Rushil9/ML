@@ -4,7 +4,7 @@ from sklearn.metrics import confusion_matrix
 from sklearn.metrics import accuracy_score
 from sklearn import datasets
 
-
+# Load dataset
 dataset = datasets.load_iris()
 
 #print(dataset)
