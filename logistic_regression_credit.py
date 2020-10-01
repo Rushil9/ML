@@ -15,6 +15,8 @@ target = creditData.default
 
 feature_train, feature_test, target_train, target_test = train_test_split(features,target, test_size=0.3)
 
+#train model and predict
+
 model = LogisticRegression()
 model.fit = model.fit(feature_train, target_train)
 predictions = model.fit.predict(feature_test)

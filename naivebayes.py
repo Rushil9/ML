@@ -17,6 +17,8 @@ data.target = data.default
 
 feature_train, feature_test, target_train, target_test = train_test_split(data.features,data.target, test_size=0.3)
 
+#train model
+
 model = GaussianNB()  
 fittedModel = model.fit(feature_train, target_train)
 predictions = fittedModel.predict(feature_test)

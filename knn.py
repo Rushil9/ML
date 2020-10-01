@@ -11,6 +11,8 @@ yRed = np.array([7,1.5,6.3,1.9,2.9,7.1])
 X = np.array([[0.3,1],[0.5,4.5],[1,2.3],[1.4,1.9],[1.7,8.9],[2,4.1],[3.3,7],[3.5,1.5],[4,6.3],[4.4,1.9],[5.7,2.9],[6,7.1]])
 y = np.array([0,0,0,0,0,0,1,1,1,1,1,1]) # 0: blue class, 1: red class
 
+#plot grapghs
+
 plt.plot(xBlue, yBlue, 'ro', color = 'blue')
 plt.plot(xRed, yRed, 'ro', color='red')
 plt.plot(3,5,'ro',color='green', markersize=15)
