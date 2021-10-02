@@ -22,7 +22,6 @@ X = dataset.iloc[:, :-1].values
 y = dataset.iloc[:, -1].values
 
 print(X)
-# print(y)
 
 """## Encoding categorical data"""
 
