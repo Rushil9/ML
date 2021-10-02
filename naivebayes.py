@@ -26,3 +26,4 @@ predictions = fittedModel.predict(feature_test)
 print(confusion_matrix(target_test, predictions))
 print(accuracy_score(target_test,predictions))
 
+# BAYES
