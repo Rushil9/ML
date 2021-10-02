@@ -33,3 +33,4 @@ k_fold = model_selection.KFold(n_splits=10, random_state=123)
 
 predictions = model_selection.cross_val_predict(best_model, feature_test, target_test, cv=k_fold)
 print("Accuracy of the tuned model: ", accuracy_score(target_test, predictions))
+# forest
