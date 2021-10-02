@@ -21,3 +21,4 @@ predictions = fittedModel.predict(featureTest)
 
 print(confusion_matrix(targetTest, predictions))
 print(accuracy_score(targetTest, predictions))
+# svm
