@@ -3,6 +3,7 @@ from matplotlib import pyplot as plt
 from sklearn.linear_model import LogisticRegression
 
 # p i = 1 / 1 + exp[ - ( b0 + b1 * x )]
+#hello
 
 x1 = np.array([0,0.6,1.1,1.5,1.8,2.5,3,3.1,3.9,4,4.9,5,5.1])
 y1 = np.array([0,0,0,0,0,0,0,0,0,0,0,0,0])
@@ -33,3 +34,4 @@ plt.show()
 
 pred = model.predict_proba(1)
 print("Prediction: ", pred)
+# short code for the following code
