@@ -37,11 +37,13 @@ for i in range(0, n):
             sim.append(f)
 
 print('FIles with % similarity > 15 are : ')
+print('sim matrix')
 print(sim)
 
 
 
 
+#similarity using cosine between different files
 
 
 
