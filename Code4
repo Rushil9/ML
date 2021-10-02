@@ -1,0 +1,63 @@
+
+// C++ code for linked list merged sort
+#include <bits/stdc++.h>
+using namespace std;
+ 
+/* Link list node */
+class Node {
+public:
+    int data;
+    Node* next;
+};
+ 
+/* function prototypes */
+Node* SortedMerge(Node* a, Node* b);
+void FrontBackSplit(Node* source,
+                    Node** frontRef, Node** backRef);
+ 
+/* sorts the linked list by changing next pointers (not data) */
+void MergeSort(Node** headRef)
+{
+    Node* head = *headRef;
+    Node* a;
+    Node* b;
+ 
+    /* Base case -- length 0 or 1 */
+    if ((head == NULL) || (head->next == NULL)) {
+        return;
+    }
+ 
+    /* Split head into 'a' and 'b' sublists */
+    FrontBackSplit(head, &a, &b);
+ 
+    /* Recursively sort the sublists */
+    MergeSort(&a);
+    MergeSort(&b);
+ 
+    /* answer = merge the two sorted lists together */
+    *headRef = SortedMerge(a, b);
+}
+ 
+/* See https:// www.geeksforgeeks.org/?p=3622 for details of this
+function */
+Node* SortedMerge(Node* a, Node* b)
+{
+    Node* result = NULL;
+ 
+    /* Base cases */
+    if (a == NULL)
+        return (b);
+    else if (b == NULL)
+        return (a);
+ 
+    /* Pick either a or b, and recur */
+    if (a->data <= b->data) {
+        result = a;
+        result->next = SortedMerge(a->next, b);
+    }
+    else {
+        result = b;
+        result->next = SortedMerge(a, b->next);
+    }
+    return (result);
+}
