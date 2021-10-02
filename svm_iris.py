@@ -7,7 +7,7 @@ from sklearn import datasets
 
 dataset = datasets.load_iris()
 
-#print(dataset)
+
 
 features = dataset.data
 targetVariables = dataset.target
