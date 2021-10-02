@@ -25,3 +25,7 @@ pred = classifier.predict(np.array([[5,5]]))
 print(pred)
 
 plt.show()
+
+
+
+# A good model for ML
