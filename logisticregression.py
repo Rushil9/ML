@@ -34,3 +34,4 @@ plt.show()
 pred = model.predict_proba(1)
 print("Prediction: ", pred)
 # short code for the following code
+# Python
